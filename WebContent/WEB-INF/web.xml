@@ -1,0 +1,18 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Add Person</display-name>
+	<welcome-file-list>
+		<welcome-file>form.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<servlet-name>PersonServlet</servlet-name>
+		<servlet-class>com.my.controller.PersonController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PersonServlet</servlet-name>
+		<url-pattern>/AddPerson</url-pattern>
+	</servlet-mapping>
+</web-app>
